@@ -1,23 +1,70 @@
 # pyproject.toml
+# Dependencies are defined here (migrated from requirements.txt).
+# To regenerate requirements.txt for Docker/CI (after uv lock): uv export --format requirements-txt --no-hashes -o requirements.txt
+
 [build-system]
-# Build dependencies for creating wheels and source distributions
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "photomigrator"      # Project name as published on PyPI
-dynamic = ["version"]       # Version is provided dynamically by setup.py
-
+name = "photomigrator"
+dynamic = ["version"]
 description = "Photo Migration Tool"
-readme = "README.md"        # Path to project README
-requires-python = ">=3.7"   # Supported Python versions
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "altgraph",
+    "certifi",
+    "charset-normalizer",
+    "colorama~=0.4.6",
+    "halo==0.0.30",
+    "idna",
+    "importlib_metadata",
+    "packaging~=25.0",
+    "pathvalidate",
+    "piexif~=1.1.3",
+    "pillow~=11.2.1",
+    "pyinstaller",
+    "pyinstaller-hooks-contrib",
+    "python-dateutil~=2.9.0.post0",
+    "pyyaml",
+    "requests~=2.32.3",
+    "requests-toolbelt~=1.0.0",
+    "rich",
+    "tabulate~=0.9.0",
+    "tqdm~=4.67.1",
+    "tzlocal",
+    "urllib3~=2.4.0",
+    "zipp",
+    "nuitka~=2.7.3",
+    "windows-curses; sys_platform == 'win32' and platform_machine == 'AMD64'",
+]
 
 [project.scripts]
-# Defines the console script that calls the main() function
-photomigrator = "PhotoMigrator:main"
+photomigrator = "PhotoMigrator:PhotoMigrator"
 
 [project.urls]
 GitHub = "https://github.com/jaimetur/PhotoMigrator"
 Documentation = "https://github.com/jaimetur/PhotoMigrator/tree/main/help"
 Source = "https://github.com/jaimetur/PhotoMigrator/tree/main/src"
 Changelog = "https://github.com/jaimetur/PhotoMigrator/blob/main/CHANGELOG.md"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# Optional: uncomment to use a specific Python version
+# dev-dependencies = []
+
+[dependency-groups]
+web = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "jinja2>=3.1.0",
+    "python-multipart>=0.0.12",
+    "sse-starlette>=2.0.0",
+]
