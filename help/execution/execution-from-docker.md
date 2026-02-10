@@ -4,9 +4,9 @@
 > ### ✅ Prerequisites:
 > - Docker need to be installed & running in your system.
 > - To install and run Docker (if it is not installed yet), you can follow the next instructions:  
->     - [Install Docker on Windows](https://github.com/jaimetur/PhotoMigrator/blob/main/help/install-docker/install-docker-windows.md)  
->     - [Install Docker on Linux](https://github.com/jaimetur/PhotoMigrator/blob/main/help/install-docker/install-docker-linux.md)  
->     - [Install Docker on MacOS](https://github.com/jaimetur/PhotoMigrator/blob/main/help/install-docker/install-docker-macos.md)  
+>     - [Install Docker on Windows](https://github.com/alelom/PhotoMigrator/blob/main/help/install-docker/install-docker-windows.md)  
+>     - [Install Docker on Linux](https://github.com/alelom/PhotoMigrator/blob/main/help/install-docker/install-docker-linux.md)  
+>     - [Install Docker on MacOS](https://github.com/alelom/PhotoMigrator/blob/main/help/install-docker/install-docker-macos.md)  
 
 
 Once you have Docker installed and running on your system, you have two options to run the Tool from a Docker Container Image:
@@ -23,16 +23,16 @@ If you chose this option, just need to follow the next steps:
 
 ### 📥 1.1. Download the ZIP package:
 
-Download the latest version of the Docker package from the [Releases page](https://github.com/jaimetur/PhotoMigrator/releases), or use the following command:
+Download the latest version of the Docker package from the [Releases page](https://github.com/alelom/PhotoMigrator/releases), or use the following command:
 
 - **Linux/macOS:**
     ```bash
-    curl -L -o PhotoMigrator_v3.7.0_docker.zip https://github.com/jaimetur/PhotoMigrator/releases/download/v3.7.0/PhotoMigrator_v3.7.0_docker.zip
+    curl -L -o PhotoMigrator_v3.7.0_docker.zip https://github.com/alelom/PhotoMigrator/releases/download/v3.7.0/PhotoMigrator_v3.7.0_docker.zip
     ```
   
 - **Windows (PowerShell):**
     ```bash
-    curl.exe -L -o PhotoMigrator_v3.7.0_docker.zip https://github.com/jaimetur/PhotoMigrator/releases/download/v3.7.0/PhotoMigrator_v3.7.0_docker.zip
+    curl.exe -L -o PhotoMigrator_v3.7.0_docker.zip https://github.com/alelom/PhotoMigrator/releases/download/v3.7.0/PhotoMigrator_v3.7.0_docker.zip
     ```
 
 
@@ -79,7 +79,7 @@ The result should be something like this:
 
 Open the file `Config.ini` included in the package with any text editor and update it with your credentials and settings.
 
-> For more information, refer to [Configuration File](https://github.com/jaimetur/PhotoMigrator/blob/main/help/0-configuration-file.md).
+> For more information, refer to [Configuration File](https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md).
 
 
 ### 🚀 1.5. Run the Tool:
@@ -167,7 +167,7 @@ Make sure Docker is running, then:
 
 Open the file `Config.ini` downloaded in the step before with any text editor and update it with your credentials and settings.
 
-> For more information, refer to [Configuration File](https://github.com/jaimetur/PhotoMigrator/blob/main/help/0-configuration-file.md).
+> For more information, refer to [Configuration File](https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md).
 
 
 ### 🐳 2.4. Execute the pulled image with docker:
@@ -217,7 +217,7 @@ Open the file `Config.ini` downloaded in the step before with any text editor an
 
 ---
 
-## 🏠 [Back to Main Page](https://github.com/jaimetur/PhotoMigrator/blob/main/README.md)
+## 🏠 [Back to Main Page](https://github.com/alelom/PhotoMigrator/blob/main/README.md)
 
 ---
 ## 🎖️ Credits:

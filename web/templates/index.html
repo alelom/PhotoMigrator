@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block title %}PhotoMigrator – Web{% endblock %}
+{% block content %}
+  <h2>Start a job</h2>
+
+  <div class="tabs">
+    <button type="button" class="tab active" data-tab="google-takeout">Google Takeout</button>
+    <button type="button" class="tab" data-tab="automatic-migration">Automatic Migration</button>
+  </div>
+
+  <div id="panel-google-takeout" class="panel active">
+    <form class="form" action="/jobs/google-takeout" method="post">
+      <label title="Full path to the folder that contains your Google Takeout export (e.g. the folder named 'Takeout' or the folder that contains Takeout .zip files).">Takeout folder path <input type="text" name="takeout_folder" required placeholder="C:\path\to\Takeout"></label>
+      <label title="Where to save the processed library. If empty, a new folder will be created next to the Takeout folder with a timestamp (e.g. Takeout_processed_20260109-120000).">Output folder (optional) <input type="text" name="output_folder" placeholder="Leave empty for default"></label>
+      <label title="Skip the GPTH (Google Photos Takeout Helper) step. CAUTION: Not recommended — GPTH is the core of the process: it reads JSON sidecar files and embeds metadata (dates, GPS, albums) into each photo/video. Enable only for quick tests or if you already ran GPTH before."><input type="checkbox" name="google_skip_gpth_tool" value="true"> Skip GPTH tool <span class="hint" aria-label="Help">?</span></label>
+      <button type="submit">Start Google Takeout job</button>
+    </form>
+  </div>
+
+  <div id="panel-automatic-migration" class="panel">
+    <form class="form" action="/jobs/automatic-migration" method="post">
+      <label title="Where to pull photos/videos from: use a cloud account (e.g. immich-1, synology-2) or a local folder path. Account numbers refer to entries in Config.ini.">Source <input type="text" name="source" required placeholder="e.g. immich-1 or /path/to/folder"></label>
+      <label title="Where to push photos/videos to: use a cloud account (e.g. synology-2, immich-1) or a local folder path. Must be set together with Source.">Target <input type="text" name="target" required placeholder="e.g. synology-2 or /path/to/folder"></label>
+      <label title="If enabled, assets are moved from source to target (deleted from source after upload). If disabled, they are copied and the source is left unchanged."><input type="checkbox" name="move_assets" value="true"> Move assets (instead of copy)</label>
+      <label title="Show a live dashboard with progress and counters during the migration. Recommended for monitoring."><input type="checkbox" name="dashboard" value="true" checked> Dashboard</label>
+      <label title="Run migration in parallel (pull and push at the same time, using a queue). If disabled, all assets are pulled first then pushed — requires enough disk space for the full library temporarily."><input type="checkbox" name="parallel_migration" value="true" checked> Parallel migration</label>
+      <button type="submit">Start Automatic Migration job</button>
+    </form>
+  </div>
+
+  <section id="help" class="help-section">
+    <h2>Help</h2>
+    <div class="help-content">
+      <h3>What is PhotoMigrator?</h3>
+      <p>PhotoMigrator helps you move and organize photos and videos across cloud services (Synology Photos, Immich) and local folders. Two main features are available here:</p>
+      <ul>
+        <li><strong>Google Takeout</strong> — Fix and organize a Google Photos Takeout export so it’s ready to upload elsewhere (metadata embedded, albums preserved, duplicates removed, etc.).</li>
+        <li><strong>Automatic Migration</strong> — Copy or move all assets (and albums) from one source (cloud or folder) to a target (cloud or folder).</li>
+      </ul>
+
+      <h3>Google Takeout</h3>
+      <p>Point the tool at the folder that contains your Google Takeout (the <code>Takeout</code> folder or the folder with Takeout .zip files). The process will:</p>
+      <ul>
+        <li>Extract metadata from JSON sidecar files and embed it into each photo/video (using <strong>GPTH</strong> and ExifTool).</li>
+        <li>Organize output into albums, fix dates, handle Live Photos, optionally remove duplicates and create a year/month structure.</li>
+      </ul>
+      <p><strong>GPTH (Google Photos Takeout Helper)</strong> is the core component that reads Google’s JSON files and writes EXIF tags (creation date, GPS, album info, etc.) into the media files. Skipping it is not recommended unless you’re only testing.</p>
+
+      <h3>Automatic Migration</h3>
+      <p>Set <strong>Source</strong> and <strong>Target</strong> to:</p>
+      <ul>
+        <li>Cloud accounts: <code>immich-1</code>, <code>synology-2</code>, etc. (the number is the account index in <code>Config.ini</code>).</li>
+        <li>Local paths: e.g. <code>C:\Photos</code> or <code>/home/user/photos</code>.</li>
+      </ul>
+      <p>You can migrate from cloud to cloud, folder to cloud, or cloud to folder. Configure Synology and Immich in <code>Config.ini</code> in the project root (or set <code>PHOTOMIGRATOR_CONFIG_PATH</code>).</p>
+
+      <h3>Options (hover for quick hints)</h3>
+      <ul class="help-options">
+        <li><strong>Skip GPTH tool</strong> — Skips the step that reads JSON and embeds metadata into files. Not recommended; use only for testing.</li>
+        <li><strong>Move assets</strong> — Delete from source after a successful copy to target. Leave unchecked to keep the source unchanged.</li>
+        <li><strong>Dashboard</strong> — Show live progress during migration. Kept on by default.</li>
+        <li><strong>Parallel migration</strong> — Pull and push at the same time (saves time and limits temporary disk use). Turn off for a strict “pull all, then push all” order if you have plenty of disk space.</li>
+      </ul>
+    </div>
+  </section>
+
+  <h2>Recent jobs</h2>
+  <div id="jobs-list" hx-get="/api/jobs" hx-trigger="load, every 5s" hx-swap="none">
+    <p>Loading…</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('.tab').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+        this.classList.add('active');
+        var panel = document.getElementById('panel-' + this.dataset.tab);
+        if (panel) panel.classList.add('active');
+      });
+    });
+    document.getElementById('jobs-list').addEventListener('htmx:afterRequest', function(ev) {
+      if (ev.detail.target.id !== 'jobs-list' || !ev.detail.xhr.response) return;
+      try {
+        var jobs = JSON.parse(ev.detail.xhr.response);
+        var html = '<table><thead><tr><th>Job</th><th>Mode</th><th>Status</th><th>Created</th></tr></thead><tbody>';
+        jobs.forEach(function(j) {
+          html += '<tr><td><a href="/job/' + j.id + '">' + j.id.slice(0,8) + '…</a></td><td>' + j.mode + '</td><td>' + j.status + '</td><td>' + j.created_at + '</td></tr>';
+        });
+        html += '</tbody></table>';
+        ev.detail.target.innerHTML = html;
+      } catch (e) {}
+    });
+  </script>
+{% endblock %}

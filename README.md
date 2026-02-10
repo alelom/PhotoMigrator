@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://github.com/jaimetur/PhotoMigrator/blob/main/assets/logos/logo_17_1024x1024.png?raw=true" alt="PhotoMigrator Logo" width="600" height="480" />
+  <img src="https://github.com/alelom/PhotoMigrator/blob/main/assets/logos/logo_17_1024x1024.png?raw=true" alt="PhotoMigrator Logo" width="600" height="480" />
 </p>
 
 
 # 📈 Repo Statistics
-[![Commit activity](https://img.shields.io/github/commit-activity/y/jaimetur/PhotoMigrator?label=Commit%20activity)](https://github.com/jaimetur/PhotoMigrator/graphs/contributors)
-[![Resolved Github issues](https://img.shields.io/github/issues-closed/jaimetur/PhotoMigrator?label=Resolved%20issues)](https://github.com/jaimetur/PhotoMigrator/issues?q=is%3Aissue%20state%3Aclosed)
-[![Open Github issues](https://img.shields.io/github/issues/jaimetur/PhotoMigrator?label=Open%20Issues)](https://github.com/jaimetur/PhotoMigrator/issues)
-[![Total Github Releases downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/total?label=Total%20downloads)](https://github.com/jaimetur/PhotoMigrator/releases)
-[![Latest version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/latest/total?label=Latest%20version%20downloads)](https://github.com/jaimetur/PhotoMigrator/releases/latest)
-[![Pre-release version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/v3.7.0/total?label=Pre%20version%20downloads)](https://github.com/jaimetur/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/jaimetur/PhotoMigrator?label=Commit%20activity)](https://github.com/alelom/PhotoMigrator/graphs/contributors)
+[![Resolved Github issues](https://img.shields.io/github/issues-closed/jaimetur/PhotoMigrator?label=Resolved%20issues)](https://github.com/alelom/PhotoMigrator/issues?q=is%3Aissue%20state%3Aclosed)
+[![Open Github issues](https://img.shields.io/github/issues/jaimetur/PhotoMigrator?label=Open%20Issues)](https://github.com/alelom/PhotoMigrator/issues)
+[![Total Github Releases downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/total?label=Total%20downloads)](https://github.com/alelom/PhotoMigrator/releases)
+[![Latest version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/latest/total?label=Latest%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases/latest)
+[![Pre-release version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/v3.7.0/total?label=Pre%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
 
 
 # 📸 **PhotoMigrator**
@@ -28,7 +28,7 @@ The Tool supports multiple accounts for the same service, so you can migrate you
 
 
 # 🖥️ Live Dashboard Preview
-![Live Dashboard](https://github.com/jaimetur/PhotoMigrator/blob/main/assets/screenshots/live_dashboard.jpg?raw=true)  
+![Live Dashboard](https://github.com/alelom/PhotoMigrator/blob/main/assets/screenshots/live_dashboard.jpg?raw=true)  
 
 # 🌟 Main Modules:
 ## 🚀 1. Automatic Migration   
@@ -37,7 +37,7 @@ The main use case is the **Automatic Migration Feature** to migrate all your pho
 > [!NOTE]
 > For more info you can check the feature documentation in below link:
 >
-> [**(Automatic Migration Documentation)**](https://github.com/jaimetur/PhotoMigrator/blob/main/help/3-automatic-migration.md)
+> [**(Automatic Migration Documentation)**](https://github.com/alelom/PhotoMigrator/blob/main/help/3-automatic-migration.md)
 
 
 ## 🛠️ 2. Google Takeout Fixing 
@@ -54,7 +54,7 @@ The whole process is done in an automatic way and is divided in different steps 
 > [!NOTE]
 > For more info you can check the feature documentation in below link:
 >
-> [**(Google Takeout Fixing Documentation)**](https://github.com/jaimetur/PhotoMigrator/blob/main/help/4-google-takeout.md)
+> [**(Google Takeout Fixing Documentation)**](https://github.com/alelom/PhotoMigrator/blob/main/help/4-google-takeout.md)
 
 ## 🖼️ 3. Synology Photos / Immich Photos / Apple Photos / Google Photos / NextCloud Photos Management
 Apart from the 'Automatic Migration' and 'Google Takeout Fixing' features, you can use the tool also to manage different Photo Cloud Services. 
@@ -62,32 +62,32 @@ Currently, the Features Supported per each Photo Cloud Service are:
 
   | Feature                         | Synology                                                                                                                                  | Immich                                                                                                                                | Apple             | Google            | Nextcloud         |
   |---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------|-------------------|-------------------|
-  | Upload Album(s) (from folder)   | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#upload-albums-from-local-folder-into-synology-photos) | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#upload-albums-from-local-folder-into-immich-photos) | Not supported yet | Not supported yet | Not supported yet |
-  | Download Album(s) (into folder) | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#download-albums-from-synology-photos)                 | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#download-albums-from-immich-photos)                 | Not supported yet | Not supported yet | Not supported yet |
-  | Upload ALL (from folder)        | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#upload-all-from-local-folder-into-synology-photos)    | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#upload-all-from-local-folder-into-immich-photos)    | Not supported yet | Not supported yet | Not supported yet |
-  | Download ALL (into folder)      | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#download-all-from-synology-photos)                    | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#download-all-from-immich-photos)                    | Not supported yet | Not supported yet | Not supported yet |
-  | Remove ALL Assets               | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-all-assets-from-synology-photos)               | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-all-assets-from-immich-photos)               | Not supported yet | Not supported yet | Not supported yet |
-  | Remove ALL Albums               | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-all-albums-from-synology-photos)               | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-all-albums-from-immich-photos)               | Not supported yet | Not supported yet | Not supported yet |
-  | Remove Albums by Name Pattern   | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-albums-by-name-pattern-from-synology-photos)   | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-albums-by-name-pattern-from-immich-photos)   | Not supported yet | Not supported yet | Not supported yet |
-  | Rename Albums by Name Pattern   | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#rename-albums-by-name-pattern-from-synology-photos)   | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#rename-albums-by-name-pattern-from-immich-photos)   | Not supported yet | Not supported yet | Not supported yet |
-  | Remove Empty Albums             | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-empty-albums-from-synology-photos)             | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-empty-albums-from-immich-photos)             | Not supported yet | Not supported yet | Not supported yet |
-  | Remove Duplicates Albums        | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-duplicates-albums-from-synology-photos)        | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-duplicates-albums-from-immich-photos)        | Not supported yet | Not supported yet | Not supported yet |
-  | Merge Duplicates Albums         | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md#merge-duplicates-albums-from-synology-photos)         | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#merge-duplicates-albums-from-immich-photos)         | Not supported yet | Not supported yet | Not supported yet |
-  | Remove Orphans Assets           | Not supported yet                                                                                                                         | [doc](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-orphans-assets-from-immich-photos)           | Not supported yet | Not supported yet | Not supported yet |
+  | Upload Album(s) (from folder)   | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#upload-albums-from-local-folder-into-synology-photos) | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#upload-albums-from-local-folder-into-immich-photos) | Not supported yet | Not supported yet | Not supported yet |
+  | Download Album(s) (into folder) | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#download-albums-from-synology-photos)                 | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#download-albums-from-immich-photos)                 | Not supported yet | Not supported yet | Not supported yet |
+  | Upload ALL (from folder)        | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#upload-all-from-local-folder-into-synology-photos)    | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#upload-all-from-local-folder-into-immich-photos)    | Not supported yet | Not supported yet | Not supported yet |
+  | Download ALL (into folder)      | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#download-all-from-synology-photos)                    | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#download-all-from-immich-photos)                    | Not supported yet | Not supported yet | Not supported yet |
+  | Remove ALL Assets               | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-all-assets-from-synology-photos)               | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-all-assets-from-immich-photos)               | Not supported yet | Not supported yet | Not supported yet |
+  | Remove ALL Albums               | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-all-albums-from-synology-photos)               | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-all-albums-from-immich-photos)               | Not supported yet | Not supported yet | Not supported yet |
+  | Remove Albums by Name Pattern   | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-albums-by-name-pattern-from-synology-photos)   | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-albums-by-name-pattern-from-immich-photos)   | Not supported yet | Not supported yet | Not supported yet |
+  | Rename Albums by Name Pattern   | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#rename-albums-by-name-pattern-from-synology-photos)   | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#rename-albums-by-name-pattern-from-immich-photos)   | Not supported yet | Not supported yet | Not supported yet |
+  | Remove Empty Albums             | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-empty-albums-from-synology-photos)             | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-empty-albums-from-immich-photos)             | Not supported yet | Not supported yet | Not supported yet |
+  | Remove Duplicates Albums        | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#remove-duplicates-albums-from-synology-photos)        | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-duplicates-albums-from-immich-photos)        | Not supported yet | Not supported yet | Not supported yet |
+  | Merge Duplicates Albums         | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md#merge-duplicates-albums-from-synology-photos)         | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#merge-duplicates-albums-from-immich-photos)         | Not supported yet | Not supported yet | Not supported yet |
+  | Remove Orphans Assets           | Not supported yet                                                                                                                         | [doc](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md#remove-orphans-assets-from-immich-photos)           | Not supported yet | Not supported yet | Not supported yet |
 
 > [!NOTE]
 > For more info you can check the feature documentation in below links:
 >
->- [**(Synology Photos Documentation)**](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md)
+>- [**(Synology Photos Documentation)**](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md)
 > 
->- [**(Immich Photos Documentation)**](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md)
+>- [**(Immich Photos Documentation)**](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md)
 
 > [!IMPORTANT]  
->- **Apple Photos**  is not available yet but is on the [Roadmap](https://github.com/jaimetur/PhotoMigrator/blob/main/ROADMAP.md) for next release.
+>- **Apple Photos**  is not available yet but is on the [Roadmap](https://github.com/alelom/PhotoMigrator/blob/main/ROADMAP.md) for next release.
 >
->- **Google Photos** is not available yet but is on the [Roadmap](https://github.com/jaimetur/PhotoMigrator/blob/main/ROADMAP.md) for next release.
+>- **Google Photos** is not available yet but is on the [Roadmap](https://github.com/alelom/PhotoMigrator/blob/main/ROADMAP.md) for next release.
 >
->- **NextCloud Photos**  is not available yet but is on the [Roadmap](https://github.com/jaimetur/PhotoMigrator/blob/main/ROADMAP.md) for next release.
+>- **NextCloud Photos**  is not available yet but is on the [Roadmap](https://github.com/alelom/PhotoMigrator/blob/main/ROADMAP.md) for next release.
 
 
 ## 🧩 4. Other Standalone Features  
@@ -104,17 +104,17 @@ Finally, the Tool also contains Other Useful Standalone Features such as:
 > [!NOTE]
 > For more info you can check the feature documentation in below link:
 >
-> [**(Other Standalone Features Documentation)**](https://github.com/jaimetur/PhotoMigrator/blob/main/help/7-other-features.md)
+> [**(Other Standalone Features Documentation)**](https://github.com/alelom/PhotoMigrator/blob/main/help/7-other-features.md)
 
 
 ## 💾 Download
 Download the tool either for Linux, MacOS or Windows (for both x64 and arm64 architectures) or Docker version (platform & architecture independent) as you prefer, directly from following links:
 
-- [Latest Stable Release](https://github.com/jaimetur/PhotoMigrator/releases/latest)
-- [Pre-Release](https://github.com/jaimetur/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
-- [All Releases](https://github.com/jaimetur/PhotoMigrator/releases)  
+- [Latest Stable Release](https://github.com/alelom/PhotoMigrator/releases/latest)
+- [Pre-Release](https://github.com/alelom/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
+- [All Releases](https://github.com/alelom/PhotoMigrator/releases)  
 
-Or check the [Changelog](https://github.com/jaimetur/PhotoMigrator/blob/main/CHANGELOG.md) to choose any specific release. 
+Or check the [Changelog](https://github.com/alelom/PhotoMigrator/blob/main/CHANGELOG.md) to choose any specific release. 
 
 > [!NOTE]  
 > The Tool is Multi-Platform and Multi-Architecture, and has been designed to be run directly from Windows systems, MacOs or within a Linux Server or NAS such as Synology NAS (Compatible with DSM 7.0 or higher), so feel free to download the version according to your system. 
@@ -122,41 +122,51 @@ Or check the [Changelog](https://github.com/jaimetur/PhotoMigrator/blob/main/CHA
 > You can also execute the Tool from a Docker container or from sources files for a better compatibility. In below sections you can find the execution instructions to run the Tool from the different methods.
 
 
+## 🌐 Web interface
+A web UI is available for running Google Takeout and Automatic Migration from the browser. Install the optional web dependencies and start the server from the project root:
+
+```bash
+uv sync --group web
+uv run --group web python -m web.main
+```
+
+Then open http://localhost:8000 . Jobs run in the background; use the job list and job detail pages to view status and logs. Configuration uses the same `Config.ini` (or set `PHOTOMIGRATOR_CONFIG_PATH` to point to it).
+
 ## ⚙️ Configuration File
 In order to connect to the different Photo Cloud Services, you must configure the connection settings using the Configuration file `Config.ini` provided with the Tool.  
 
 You can see how to configure the Configuration File in this help section:
-[Configuration File](https://github.com/jaimetur/PhotoMigrator/blob/main/help/0-configuration-file.md) 
+[Configuration File](https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md) 
 
 
 ## ⌨️ Command Line Interface
 This Tool is based on commands given through the Command Line Interface (CLI), so it is important to know the syntax of that interface.  
 
 You can check the whole list of features and arguments with the right syntax here:
-[Command Line Interface (CLI)](https://github.com/jaimetur/PhotoMigrator/blob/main/help/1-command-line-interface.md)
+[Command Line Interface (CLI)](https://github.com/alelom/PhotoMigrator/blob/main/help/1-command-line-interface.md)
 
 
 ## 📚 Arguments Description
-Check all arguments descriptions and usage examples in the [Arguments Description](https://github.com/jaimetur/PhotoMigrator/blob/main/help/2-arguments-description.md)  or in the [shorter version](https://github.com/jaimetur/PhotoMigrator/blob/main/help/2-arguments-description-short.md).
+Check all arguments descriptions and usage examples in the [Arguments Description](https://github.com/alelom/PhotoMigrator/blob/main/help/2-arguments-description.md)  or in the [shorter version](https://github.com/alelom/PhotoMigrator/blob/main/help/2-arguments-description-short.md).
 
 
 ## 📘 All Documentation Links
-- [Configuration File](https://github.com/jaimetur/PhotoMigrator/blob/main/help/0-configuration-file.md)  
-- [Command Line Interface (CLI)](https://github.com/jaimetur/PhotoMigrator/blob/main/help/1-command-line-interface.md)  
-- [Arguments Description](https://github.com/jaimetur/PhotoMigrator/blob/main/help/2-arguments-description.md)  
-- [Automatic Migration Feature](https://github.com/jaimetur/PhotoMigrator/blob/main/help/3-automatic-migration.md)  
-- [Google Takeout Management](https://github.com/jaimetur/PhotoMigrator/blob/main/help/4-google-takeout.md)  
-- [Synology Photos Management](https://github.com/jaimetur/PhotoMigrator/blob/main/help/5-synology-photos.md)  
-- [Immich Photos Management](https://github.com/jaimetur/PhotoMigrator/blob/main/help/6-immich-photos.md)  
-- [Other Features](https://github.com/jaimetur/PhotoMigrator/blob/main/help/7-other-features.md)  
-- [GPTH Tool Pipeline Description](https://github.com/jaimetur/PhotoMigrator/blob/main/help/gpth_process_explanations/00_GPTH_complete_pipeline.md)
+- [Configuration File](https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md)  
+- [Command Line Interface (CLI)](https://github.com/alelom/PhotoMigrator/blob/main/help/1-command-line-interface.md)  
+- [Arguments Description](https://github.com/alelom/PhotoMigrator/blob/main/help/2-arguments-description.md)  
+- [Automatic Migration Feature](https://github.com/alelom/PhotoMigrator/blob/main/help/3-automatic-migration.md)  
+- [Google Takeout Management](https://github.com/alelom/PhotoMigrator/blob/main/help/4-google-takeout.md)  
+- [Synology Photos Management](https://github.com/alelom/PhotoMigrator/blob/main/help/5-synology-photos.md)  
+- [Immich Photos Management](https://github.com/alelom/PhotoMigrator/blob/main/help/6-immich-photos.md)  
+- [Other Features](https://github.com/alelom/PhotoMigrator/blob/main/help/7-other-features.md)  
+- [GPTH Tool Pipeline Description](https://github.com/alelom/PhotoMigrator/blob/main/help/gpth_process_explanations/00_GPTH_complete_pipeline.md)
 
 
 ## ▶️ Execution Methods
 There are three different methods to execute this Tool:
-- From [Compiled Binaries](https://github.com/jaimetur/PhotoMigrator/blob/main/help/execution/execution-from-binaries.md)
-- From [Docker Container](https://github.com/jaimetur/PhotoMigrator/blob/main/help/execution/execution-from-docker.md)
-- From [Source Repository](https://github.com/jaimetur/PhotoMigrator/blob/main/help/execution/execution-from-source.md)
+- From [Compiled Binaries](https://github.com/alelom/PhotoMigrator/blob/main/help/execution/execution-from-binaries.md)
+- From [Docker Container](https://github.com/alelom/PhotoMigrator/blob/main/help/execution/execution-from-docker.md)
+- From [Source Repository](https://github.com/alelom/PhotoMigrator/blob/main/help/execution/execution-from-source.md)
 
 The below tables show the pros and cons of each method together with a comparative rating of each one of them for you to decide which one fits best with your needed: 
 
@@ -188,14 +198,14 @@ The below tables show the pros and cons of each method together with a comparati
 
 ## 📝 CHANGELOG
 The Historical Change Log can be checked in the following link:
-[Changelog](https://github.com/jaimetur/PhotoMigrator/blob/main/CHANGELOG.md)
+[Changelog](https://github.com/alelom/PhotoMigrator/blob/main/CHANGELOG.md)
 
 ## 📅 ROADMAP
 The Planned Roadmap for futures releases can be checked in the following link:
-[Planned Roadmap](https://github.com/jaimetur/PhotoMigrator/blob/main/ROADMAP.md)
+[Planned Roadmap](https://github.com/alelom/PhotoMigrator/blob/main/ROADMAP.md)
 
 ## 🛡️ CODE OF CONDUCT
-By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/jaimetur/PhotoMigrator/blob/main/CODE_OF_CONDUCT.md).
+By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/alelom/PhotoMigrator/blob/main/CODE_OF_CONDUCT.md).
 
 ## 📢 Disclaimer
 
@@ -217,11 +227,11 @@ By participating in this project, you agree to abide by our [Code of Conduct](ht
 </a>
 
 ## 👥 Contributors
-<a href="https://github.com/jaimetur/PhotoMigrator/graphs/contributors">
+<a href="https://github.com/alelom/PhotoMigrator/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=jaimetur/PhotoMigrator" width="15%"/>
 </a>
 
-If you want to Contribute to this project please, first read the file [CONTRIBUTING.md](https://github.com/jaimetur/PhotoMigrator/blob/main/CONTRIBUTING.md)
+If you want to Contribute to this project please, first read the file [CONTRIBUTING.md](https://github.com/alelom/PhotoMigrator/blob/main/CONTRIBUTING.md)
 
 ---
 

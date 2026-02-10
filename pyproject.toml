@@ -45,10 +45,10 @@ dependencies = [
 photomigrator = "PhotoMigrator:PhotoMigrator"
 
 [project.urls]
-GitHub = "https://github.com/jaimetur/PhotoMigrator"
-Documentation = "https://github.com/jaimetur/PhotoMigrator/tree/main/help"
-Source = "https://github.com/jaimetur/PhotoMigrator/tree/main/src"
-Changelog = "https://github.com/jaimetur/PhotoMigrator/blob/main/CHANGELOG.md"
+GitHub = "https://github.com/alelom/PhotoMigrator"
+Documentation = "https://github.com/alelom/PhotoMigrator/tree/main/help"
+Source = "https://github.com/alelom/PhotoMigrator/tree/main/src"
+Changelog = "https://github.com/alelom/PhotoMigrator/blob/main/CHANGELOG.md"
 
 [tool.setuptools.package-dir]
 "" = "src"

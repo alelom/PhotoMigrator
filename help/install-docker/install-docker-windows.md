@@ -71,7 +71,7 @@ Or follow the manual instructions in the official guide:
 
 ---
 
-## 🏠 [Back to Main Page](https://github.com/jaimetur/PhotoMigrator/blob/main/README.md)
+## 🏠 [Back to Main Page](https://github.com/alelom/PhotoMigrator/blob/main/README.md)
 
 ---
 ## 🎖️ Credits:

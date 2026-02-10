@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}PhotoMigrator{% endblock %}</title>
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+  <header class="header">
+    <h1><a href="/">PhotoMigrator</a></h1>
+    <nav><a href="/">Home</a> · <a href="/config">Config</a> · <a href="/#help">Help</a> · <a href="https://github.com/alelom/PhotoMigrator" target="_blank" rel="noopener noreferrer">GitHub</a></nav>
+  </header>
+  <main class="main">
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>

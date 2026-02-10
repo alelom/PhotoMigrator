@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}Configuration – PhotoMigrator{% endblock %}
+{% block content %}
+  <h2>Configuration</h2>
+  <p class="config-path">Editing: <code>{{ config_path }}</code></p>
+  {% if not writable %}
+  <p class="config-warn">This file is not writable from the server. Set <code>PHOTOMIGRATOR_CONFIG_PATH</code> to a writable path, or adjust file permissions.</p>
+  {% endif %}
+  {% if saved %}
+  <p class="config-saved">Configuration saved successfully.</p>
+  {% endif %}
+
+  <form class="config-form" action="/config" method="post">
+    {% for section in sections %}
+    <fieldset class="config-section">
+      <legend>{{ section.name }}</legend>
+      {% if section.get('hint') %}
+      <p class="config-section-hint" title="{{ section.hint }}">{{ section.hint }}</p>
+      {% endif %}
+      {% set opts = section.get('options', section.get('keys', [])) %}
+      {% if opts %}
+      <div class="config-keys">
+        {% for opt in opts %}
+        <label class="config-key" title="{{ opt.get('hint', opt.key) }}">
+          <span class="config-key-label">{{ opt.key }}{% if opt.get('hint') %} <span class="config-opt-hint" title="{{ opt.hint }}">?</span>{% endif %}</span>
+          <input
+            type="{% if opt.is_password %}password{% else %}text{% endif %}"
+            name="{{ form_field_name(section.form_section, opt.key) }}"
+            value="{{ opt.value }}"
+            placeholder="{% if opt.is_password and opt.value %}••••••{% endif %}"
+            title="{{ opt.get('hint', '') }}"
+            {% if opt.is_password %}autocomplete="off"{% endif %}
+            {% if not writable %}readonly{% endif %}
+            class="config-input"
+          >
+        </label>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p class="config-no-keys">No options for this section.</p>
+      {% endif %}
+    </fieldset>
+    {% endfor %}
+    {% if writable %}
+    <button type="submit" class="config-submit">Save configuration</button>
+    {% endif %}
+  </form>
+  <p class="config-help"><a href="https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md" target="_blank" rel="noopener noreferrer">Configuration file help</a></p>
+{% endblock %}
