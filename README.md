@@ -4,12 +4,12 @@
 
 
 # 📈 Repo Statistics
-[![Commit activity](https://img.shields.io/github/commit-activity/y/jaimetur/PhotoMigrator?label=Commit%20activity)](https://github.com/alelom/PhotoMigrator/graphs/contributors)
-[![Resolved Github issues](https://img.shields.io/github/issues-closed/jaimetur/PhotoMigrator?label=Resolved%20issues)](https://github.com/alelom/PhotoMigrator/issues?q=is%3Aissue%20state%3Aclosed)
-[![Open Github issues](https://img.shields.io/github/issues/jaimetur/PhotoMigrator?label=Open%20Issues)](https://github.com/alelom/PhotoMigrator/issues)
-[![Total Github Releases downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/total?label=Total%20downloads)](https://github.com/alelom/PhotoMigrator/releases)
-[![Latest version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/latest/total?label=Latest%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases/latest)
-[![Pre-release version downloads](https://img.shields.io/github/downloads/jaimetur/PhotoMigrator/v3.7.0/total?label=Pre%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
+[![Commit activity](https://img.shields.io/github/commit-activity/y/alelom/PhotoMigrator?label=Commit%20activity)](https://github.com/alelom/PhotoMigrator/graphs/contributors)
+[![Resolved Github issues](https://img.shields.io/github/issues-closed/alelom/PhotoMigrator?label=Resolved%20issues)](https://github.com/alelom/PhotoMigrator/issues?q=is%3Aissue%20state%3Aclosed)
+[![Open Github issues](https://img.shields.io/github/issues/alelom/PhotoMigrator?label=Open%20Issues)](https://github.com/alelom/PhotoMigrator/issues)
+[![Total Github Releases downloads](https://img.shields.io/github/downloads/alelom/PhotoMigrator/total?label=Total%20downloads)](https://github.com/alelom/PhotoMigrator/releases)
+[![Latest version downloads](https://img.shields.io/github/downloads/alelom/PhotoMigrator/latest/total?label=Latest%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases/latest)
+[![Pre-release version downloads](https://img.shields.io/github/downloads/alelom/PhotoMigrator/v3.7.0/total?label=Pre%20version%20downloads)](https://github.com/alelom/PhotoMigrator/releases?q=%22alpha%22+OR+%22beta%22+OR+%22RC%22&expanded=true)
 
 
 # 📸 **PhotoMigrator**
@@ -218,17 +218,17 @@ By participating in this project, you agree to abide by our [Code of Conduct](ht
 ![Alt](https://repobeats.axiom.co/api/embed/b3021f0fd0db11466b473e34c9de04cc5d85f110.svg "Repobeats analytics image")
 
 ## 📈 Star History
-<a href="https://www.star-history.com/#jaimetur/PhotoMigrator&Date">
+<a href="https://www.star-history.com/#alelom/PhotoMigrator&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=jaimetur/PhotoMigrator&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=jaimetur/PhotoMigrator&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=jaimetur/PhotoMigrator&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=alelom/PhotoMigrator&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=alelom/PhotoMigrator&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=alelom/PhotoMigrator&type=Date" />
  </picture>
 </a>
 
 ## 👥 Contributors
 <a href="https://github.com/alelom/PhotoMigrator/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jaimetur/PhotoMigrator" width="15%"/>
+  <img src="https://contrib.rocks/image?repo=alelom/PhotoMigrator" width="15%"/>
 </a>
 
 If you want to Contribute to this project please, first read the file [CONTRIBUTING.md](https://github.com/alelom/PhotoMigrator/blob/main/CONTRIBUTING.md)

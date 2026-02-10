@@ -24,9 +24,9 @@ Whether you want to fix a bug, suggest a feature, improve documentation, or just
 ## 🧭 How to contribute
 
 ### 1. **Check for open issues**
-Before starting anything, take a look at the [Issues](https://github.com/jaimetur/PhotoMigrator/issues) tab to see if your idea or bug has already been reported.
+Before starting anything, take a look at the [Issues](https://github.com/alelom/PhotoMigrator/issues) tab to see if your idea or bug has already been reported.
 
-If it hasn’t, feel free to [open a new issue](https://github.com/jaimetur/PhotoMigrator/issues/new/choose).
+If it hasn’t, feel free to [open a new issue](https://github.com/alelom/PhotoMigrator/issues/new/choose).
 
 ---
 
@@ -34,7 +34,7 @@ If it hasn’t, feel free to [open a new issue](https://github.com/jaimetur/Phot
 Click the **Fork** button at the top right of the repository, then:
 
 ```bash
-git clone https://github.com/jaimetur/PhotoMigrator.git
+git clone https://github.com/alelom/PhotoMigrator.git
 cd PhotoMigrator
 ```
 

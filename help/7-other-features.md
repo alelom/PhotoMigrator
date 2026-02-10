@@ -118,7 +118,7 @@ If more than one Stand Alone Extra Feature is detected, only the first one will 
 
 ---
 
-## 🏠 [Back to Main Page](https://github.com/jaimetur/PhotoMigrator/blob/main/README.md)
+## 🏠 [Back to Main Page](https://github.com/alelom/PhotoMigrator/blob/main/README.md)
 
 
 ---

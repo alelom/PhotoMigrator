@@ -281,11 +281,11 @@ SYNOLOGY_PASSWORD_3         = password_3                                    # Ac
 
 ## ⚙️ Config.ini
 You can see how to configure the Config.ini file in this help section:
-[Configuration File](https://github.com/jaimetur/PhotoMigrator/blob/main/help/0-configuration-file.md) 
+[Configuration File](https://github.com/alelom/PhotoMigrator/blob/main/help/0-configuration-file.md) 
 
 ---
 
-## 🏠 [Back to Main Page](https://github.com/jaimetur/PhotoMigrator/blob/main/README.md)
+## 🏠 [Back to Main Page](https://github.com/alelom/PhotoMigrator/blob/main/README.md)
 
 
 ---

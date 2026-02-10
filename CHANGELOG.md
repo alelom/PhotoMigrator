@@ -1,6 +1,6 @@
 # 🗓️ CHANGELOG
-[Planned Roadmap](https://github.com/jaimetur/PhotoMigrator/blob/main/ROADMAP.md) for the following releases
-[Changelog](https://github.com/jaimetur/PhotoMigrator/blob/main/CHANGELOG.md) for the past releases+
+[Planned Roadmap](https://github.com/alelom/PhotoMigrator/blob/main/ROADMAP.md) for the following releases
+[Changelog](https://github.com/alelom/PhotoMigrator/blob/main/CHANGELOG.md) for the past releases+
 
 ---
 
@@ -368,7 +368,7 @@
     - Added new Feature to create a Graphical User Interface (if supported) or Interactive Prompts (if Graphical Interface is not supported) to configure `Google Takeout Fixing` feature if the tool is called without arguments.
 
   - #### 🚀 Enhancements:
-    - Enhancement [#866](https://github.com/jaimetur/PhotoMigrator/issues/866) to Improve performance of Input Info Analysis in 'Automatic Migration Feature' using an object from class FolderAnalyzer instead of performing read/write disk operations on LocalFolder class methods.
+    - Enhancement [#866](https://github.com/alelom/PhotoMigrator/issues/866) to Improve performance of Input Info Analysis in 'Automatic Migration Feature' using an object from class FolderAnalyzer instead of performing read/write disk operations on LocalFolder class methods.
     - Enhancement on 'Album Pulled' / 'Album Pushed' dashboard messages during `Automatic Migration Feature`. Now Album messages are displayed in bright color to highlight it vs normal asset pull/push operations. 
     - Enhancement on `ClassLocalFolder`. Now all methods of this class uses an object analyzer from FolderAnalyzer class to speed-up any file operations. 
     - Enhancement on `Automatic Migration Feature` when using Live Dashboard. Now it catch any exception during processing.
@@ -386,9 +386,9 @@
       7. Of none of above methods detect a valid date, the file will be count as 'no valid date' file.
 
   - #### 🐛 Bug fixes:
-    - Fixed bug [#865](https://github.com/jaimetur/PhotoMigrator/issues/865) to avoid Albums Duplication on 'Automatic Migration Feature' due to race conditions when more than 1 pusher_workers try to create the same Album in parallel. Now, to avoid this race conditions, only pusher_worker with id=1 is allowed to create new Albums. If the Album does not exists and the id>1 then the asset is returned back to pusher_queue.
-    - Fixed bug [#879](https://github.com/jaimetur/PhotoMigrator/issues/879) in `guess_date_from_filename` function when the filename contains a number starting with 19 or 20 followed by 2 or more digits without checking if the following digits matches with a real month or month+day.
-    - Fixed Bug [#884](https://github.com/jaimetur/PhotoMigrator/issues/884) in 'Google Takeout Processing' feature when flag `-gics, --google-ignore-check-structure` is detected causing that Output Folder is the same as Input Takeout Folder and deleting that at the end of the process.
+    - Fixed bug [#865](https://github.com/alelom/PhotoMigrator/issues/865) to avoid Albums Duplication on 'Automatic Migration Feature' due to race conditions when more than 1 pusher_workers try to create the same Album in parallel. Now, to avoid this race conditions, only pusher_worker with id=1 is allowed to create new Albums. If the Album does not exists and the id>1 then the asset is returned back to pusher_queue.
+    - Fixed bug [#879](https://github.com/alelom/PhotoMigrator/issues/879) in `guess_date_from_filename` function when the filename contains a number starting with 19 or 20 followed by 2 or more digits without checking if the following digits matches with a real month or month+day.
+    - Fixed Bug [#884](https://github.com/alelom/PhotoMigrator/issues/884) in 'Google Takeout Processing' feature when flag `-gics, --google-ignore-check-structure` is detected causing that Output Folder is the same as Input Takeout Folder and deleting that at the end of the process.
     - Fixed Bug in `mode_folders_rename_content_based` function. It was not updated to the new output dictionary.    
     - Fixed Bug in `FolderAnalyzer` when create the extracted_dates dictionary on Windows system, and you have any path with unicode characters accents or special chars.    
 
@@ -428,8 +428,8 @@
     
   - #### 🐛 Bug fixes:
     - Fixed minor issues in Logger module. 
-    - Fixed a bug in function 'Guess date from filename' when filename or filepath contains some digits that were parsed as year of the file . Fixed in [#867](https://github.com/jaimetur/PhotoMigrator/issues/867).
-    - Fixed bug [#864](https://github.com/jaimetur/PhotoMigrator/issues/864) in Push asset to Immich when the asset to push has not os.stat().st_mtime returning -1. Now those files returns first epoch (1970-01-01) as fallback. Fixed in [#867](https://github.com/jaimetur/PhotoMigrator/issues/867).
+    - Fixed a bug in function 'Guess date from filename' when filename or filepath contains some digits that were parsed as year of the file . Fixed in [#867](https://github.com/alelom/PhotoMigrator/issues/867).
+    - Fixed bug [#864](https://github.com/alelom/PhotoMigrator/issues/864) in Push asset to Immich when the asset to push has not os.stat().st_mtime returning -1. Now those files returns first epoch (1970-01-01) as fallback. Fixed in [#867](https://github.com/alelom/PhotoMigrator/issues/867).
 
   - #### 📚 Documentation: 
     - Updated documentation with all changes.
@@ -446,8 +446,8 @@
     
   - #### 🐛 Bug fixes:
     - Fixed a bug in function get_file_date() function affecting files with EXIF tags in different format (UTC naive and UTC aware). Now all EXIF date tags are converted to UTC aware before extracting the oldest date.
-    - Fixed a bug [#730](https://github.com/jaimetur/PhotoMigrator/issues/730) when the tool was executed without arguments and the input folder was selected using windows dialog pop-up.
-    - Fixed a bug [#739](https://github.com/jaimetur/PhotoMigrator/issues/739) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
+    - Fixed a bug [#730](https://github.com/alelom/PhotoMigrator/issues/730) when the tool was executed without arguments and the input folder was selected using windows dialog pop-up.
+    - Fixed a bug [#739](https://github.com/alelom/PhotoMigrator/issues/739) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
 
 ---
 
@@ -464,8 +464,8 @@
 
   - #### 🐛 Bug fixes:
     - Fixed a bug in function get_file_date() function affecting files with EXIF tags in different format (UTC naive and UTC aware). Now all EXIF date tags are converted to UTC aware before extracting the oldest date.
-    - Fixed a bug [#649](https://github.com/jaimetur/PhotoMigrator/issues/649) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
-    - Fixed a bug [#663](https://github.com/jaimetur/PhotoMigrator/issues/663) in function is_date_outside_range() when no date filters have been provided.
+    - Fixed a bug [#649](https://github.com/alelom/PhotoMigrator/issues/649) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
+    - Fixed a bug [#663](https://github.com/alelom/PhotoMigrator/issues/663) in function is_date_outside_range() when no date filters have been provided.
 
   - #### 📚 Documentation:
     - New logo design (thanks to @mbarbero).
@@ -619,8 +619,8 @@
     - Fixed 'Rename Albums' Feature when no date range is found in its name. Before it removed any date found, now, if is not possible to extract a date range, just keep the cleaned name (without date range prefix). 
     - Fixed Docker Version to include EXIF Tool.
     - Fixed an issue in `Google Takeout Processing` feature creating output folder when automatically switch to `--google-ignore-check-structure` when no detecting a valid Takeout Structure.
-    - Fixed a bug [#649](https://github.com/jaimetur/PhotoMigrator/issues/649) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
-    - Fixed a bug [#663](https://github.com/jaimetur/PhotoMigrator/issues/663) in function is_date_outside_range() when no date filters have been provided.
+    - Fixed a bug [#649](https://github.com/alelom/PhotoMigrator/issues/649) in function resolve_internal_path() that after code refactoring on v3.4.0, the function was not resolving properly the paths when te tool were executed from compiled binary file.
+    - Fixed a bug [#663](https://github.com/alelom/PhotoMigrator/issues/663) in function is_date_outside_range() when no date filters have been provided.
 
   - #### 📚 Documentation:
     - Improved Google Takeout Feature documentation.
@@ -685,7 +685,7 @@
     - Added new argument _**`-client, --cient \<CLIENT_NAME>`**_ to set the Cloud Photo client to use.
     - Added new argument _**`-id, --account-id \<ID>`**_ to specify which account to use for Synology Photos and Immich Photos from Config.ini.
     - Added new argument _**`-move, --move-assets`**_ to move assets (instead of copy) from \<SOURCE> client to \<TARGET> client during Automatic Migration process.
-    - Added support for 2FA in Synology Photos requesting the OTP Token if flag _**`-OTP, --one-time-password`**_ is detected. [#218](https://github.com/jaimetur/PhotoMigrator/issues/218).
+    - Added support for 2FA in Synology Photos requesting the OTP Token if flag _**`-OTP, --one-time-password`**_ is detected. [#218](https://github.com/alelom/PhotoMigrator/issues/218).
       - New flag _**`-OTP, --one-time-password`**_ to allow login into Synology Photos accounts with 2FA activated.
     - Added new Feature to **Remove Albums by Name Pattern** from Synology Photos and Immich Photos to remove those albums whose name matches with a provided pattern (using regular expressions). Added following new flag to execute this new features:
       - _**`-rAlb, --remove-albums \<ALBUM_NAME_PATTERN>`**_
@@ -734,7 +734,7 @@
     - Many improvements and automations in GitHub Actions to generate new builds and releases.     
 
   - #### 🐛 Bug fixes:
-    - Fixed issue when username/password contains the special char (#) reserved for in-line comments in the configuration file (Config.ini). [#218](https://github.com/jaimetur/PhotoMigrator/issues/218).
+    - Fixed issue when username/password contains the special char (#) reserved for in-line comments in the configuration file (Config.ini). [#218](https://github.com/alelom/PhotoMigrator/issues/218).
     - Fixed a bug with feature **Remove All Albums** from Synology Photos and Immich Photos when the flag _**`--remove-albums-assets`**_ was selected (the assets were not removed properly).
     - Fixed a bug with feature **Synology Upload Album(s)** when the folder to upload is not named "Albums".
     - Fixed a bug when any input folder ends with '\' or '/' but is enclosed between double quotes (").
@@ -814,7 +814,7 @@
     - Documentation is now included as part of the distribution packages.
 
   - #### 🖥️ Live Dashboard Preview:
-    ![Live Dashboard](https://github.com/jaimetur/PhotoMigrator/blob/main/assets/screenshots/live_dashboard.jpg?raw=true)  
+    ![Live Dashboard](https://github.com/alelom/PhotoMigrator/blob/main/assets/screenshots/live_dashboard.jpg?raw=true)  
 
 ---
 

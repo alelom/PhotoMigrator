@@ -5,7 +5,7 @@ import yaml
 from pathlib import Path
 
 # CONFIGURACIÓN
-REPO = "jaimetur/PhotoMigrator"
+REPO = "alelom/PhotoMigrator"
 DROPDOWN_ID = "version"
 MAX_RELEASES = 50
 

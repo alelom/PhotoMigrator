@@ -156,11 +156,11 @@ Make sure Docker is running, then:
 ### 📥 2.2. Download Configuration File: `Config.ini`
 - **Linux/macOS:**
     ```bash
-    curl -L -o Config.ini https://raw.githubusercontent.com/jaimetur/PhotoMigrator/main/Config.ini
+    curl -L -o Config.ini https://raw.githubusercontent.com/alelom/PhotoMigrator/main/Config.ini
     ```
 - **Windows (PowerShell):**
   ```bash
-  curl.exe -L -o Config.ini https://raw.githubusercontent.com/jaimetur/PhotoMigrator/main/Config.ini
+  curl.exe -L -o Config.ini https://raw.githubusercontent.com/alelom/PhotoMigrator/main/Config.ini
   ```
 
 ### 📝 2.3. Edit Tool Configuration file: `Config.ini`
